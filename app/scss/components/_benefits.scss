@@ -1,0 +1,157 @@
+.benefits {
+  background-image: url(../images/benefits/decor.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  padding: 40px 0 0;
+
+  &__inner {
+    padding-top: 35px;
+    margin-bottom: 100px;
+    border-top: 1px solid $border-light;
+    position: relative;
+    padding-top: 35px;
+    padding-bottom: 50px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 305px;
+      height: 2px;
+      background-color: $accent;
+      right: 0;
+      top: -2px;
+
+      @media (max-width: 534px) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 840px) {
+      padding-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    text-align: right;
+    padding-right: 30px;
+    margin-bottom: 95px;
+    padding-top: 20px;
+
+    @media (max-width: 840px) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__top {
+    max-width: 683px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    @media (max-width: 840px) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    span {
+      font-size: 150px;
+      font-weight: 800;
+      color: $accent;
+      opacity: 0.7;
+      line-height: 0.85;
+
+      @media (max-width: 470px) {
+        font-size: 80px;
+      }
+    }
+
+    &--year {
+      margin-top: 17px;
+    }
+
+    &--clients {
+      padding-right: 63px;
+    }
+
+    @media (max-width: 840px) {
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__text {
+    position: absolute;
+    top: 30px;
+
+    @media (max-width: 471px) {
+      position: static;
+    }
+  }
+
+  &__text {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.1;
+
+    &--year {
+      left: 55px;
+
+      @media (max-width: 480px) {
+        width: 170px;
+      }
+    }
+
+    &--meters {
+      left: 162px;
+      width: 205px;
+    }
+
+    &--staff {
+      left: 155px;
+      top: 50px;
+
+      @media (max-width: 480px) {
+        width: 230px;
+      }
+    }
+
+    &--clients {
+      width: 125px;
+      top: 50px;
+      left: 250px;
+    }
+  }
+
+  &__bottom-box {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  &__bottom {
+    max-width: 925px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 840px) {
+      flex-direction: column;
+    }
+  }
+
+  &__under {
+    font-size: 24px;
+    font-weight: 700;
+    color: $accent;
+    line-height: 1;
+    padding-left: 15px;
+    opacity: 0.7;
+  }
+}

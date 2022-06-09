@@ -1,0 +1,154 @@
+.installment-benefits {
+  background-image: url(../images/ico/line.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 40px;
+  padding-bottom: 115px;
+  &__wide {
+    background-color: #fff;
+    box-shadow: 0px 0px 50px 18px rgba(0, 0, 0, 0.15);
+  }
+
+  &__list {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -10px 10px;
+
+    @media (max-width: 618px) {
+      padding-top: 40px;
+    }
+  }
+
+  &__item {
+    max-width: 320px;
+    width: 100%;
+    margin: 0 10px 75px;
+    padding-top: 85px;
+    position: relative;
+
+    @media (max-width: 688px) {
+      max-width: 100%;
+      margin-bottom: 40px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &--lacks {
+      &::before {
+        width: 55px;
+        height: 55px;
+        background-image: url(../images/installment/1.png);
+      }
+    }
+
+    &--noreference {
+      &::before {
+        width: 45px;
+        height: 55px;
+        background-image: url(../images/installment/2.png);
+      }
+    }
+
+    &--shorttime {
+      &::before {
+        width: 54px;
+        height: 56px;
+        background-image: url(../images/installment/3.png);
+      }
+    }
+
+    &--nopercent {
+      &::before {
+        width: 42px;
+        height: 56px;
+        background-image: url(../images/installment/4.png);
+      }
+    }
+
+    &--noguarantor {
+      &::before {
+        width: 50px;
+        height: 55px;
+        background-image: url(../images/installment/5.png);
+      }
+    }
+
+    &--help {
+      &::before {
+        width: 47px;
+        height: 56px;
+        background-image: url(../images/installment/6.png);
+      }
+    }
+  }
+
+  &__text {
+    p {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.3;
+      border-bottom: 1px solid $accent;
+      display: inline;
+    }
+  }
+
+  &__buttons {
+    padding-top: 35px;
+    border-top: 1px solid #e5e5e5;
+    padding-bottom: 55px;
+  }
+
+  &__buttons-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width: 926px) {
+      justify-content: center;
+    }
+  }
+
+  &__button {
+    max-width: 286px;
+    width: 100%;
+    height: 48px;
+    border: 1px solid $accent;
+    background-color: transparent;
+    color: $accent;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 800;
+    cursor: pointer;
+    margin-right: 20px;
+
+    @media (max-width: 926px) {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    @media (max-width: 618px) {
+      max-width: 100%;
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

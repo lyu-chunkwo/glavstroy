@@ -1,0 +1,63 @@
+.principles {
+  margin-bottom: 120px;
+
+  @media (max-width: 1118px) {
+   margin-bottom: 40px;
+  }
+
+  &__wide {
+    background-image: url(../images/benefits/decor.png);
+    background-repeat: no-repeat;
+    background-position: left 110px top;
+    padding-top: 40px;
+  }
+
+  &__title {
+    @include line-l;
+    padding-left: 24px;
+    margin-bottom: 80px;
+    
+    @media (max-width: 1118px) {
+     margin-bottom: 0;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width: 1118px) {
+     display: block;
+    }
+  }
+
+  &__item {
+    max-width: 350px;
+    margin-right: 20px;
+
+    @media (max-width: 1118px) {
+     max-width: 100%;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__text {
+    display: flex;
+
+    span {
+      font-size: 150px;
+      font-weight: 800;
+      color: $accent;
+      line-height: 1;
+    }
+
+    p {
+      padding-top: 45px;
+      margin-left: -40px;
+      font-size: 18px;
+    }
+  }
+}

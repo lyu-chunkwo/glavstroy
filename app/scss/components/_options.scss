@@ -1,0 +1,278 @@
+.options {
+  margin-bottom: 65px;
+
+  @media (max-width: 930px) {
+   margin-bottom: 0;
+  }
+
+  &__decor {
+    background-image: url(../images/general/decor.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding-top: 40px;
+  }
+
+  &__inner {
+    @include line;
+  }
+
+  &__title-box {
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    max-width: 290px;
+
+    @media (max-width: 360px) {
+     font-size: 24px;
+    }
+  }
+
+  &__dwelling {
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+    border-bottom: 1px solid $accent;
+
+    span {
+      font-size: 48px;
+      font-weight: 200;
+      color: $accent;
+      line-height: 1;
+    }
+  }
+
+  &__top-title {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+
+  &__item {
+    width: 250px;
+    margin: 0 16px 55px;
+    position: relative;
+    padding-top: 60px;
+
+    @media (max-width: 840px) {
+     margin-bottom: 30px;
+    }
+
+    @media (max-width: 562px) {
+     width: 100%;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    // todo technical
+
+    &--design {
+      &::before {
+        background-image: url(../images/options/technical/1.png);
+        width: 39px;
+        height: 40px;
+      }
+    }
+
+    &--wall {
+      &::before {
+        background-image: url(../images/options/technical/2.png);
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    &--celling {
+      &::before {
+        background-image: url(../images/options/technical/3.png);
+        width: 52px;
+        height: 34px;
+      }
+    }
+
+    &--facade {
+      &::before {
+        background-image: url(../images/options/technical/4.png);
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    // todo apartments
+
+    &--gas {
+      &::before {
+        background-image: url(../images/options/apartments/1.png);
+        width: 29px;
+        height: 40px;
+      }
+    }
+
+    &--heating {
+      &::before {
+        background-image: url(../images/options/apartments/2.png);
+        width: 47px;
+        height: 40px;
+      }
+    }
+
+    &--water {
+      &::before {
+        background-image: url(../images/options/apartments/3.png);
+        width: 36px;
+        height: 40px;
+      }
+    }
+
+    &--lift {
+      &::before {
+        background-image: url(../images/options/apartments/4.png);
+        width: 40px;
+        height: 41px;
+      }
+    }
+
+    &--window {
+      &::before {
+        background-image: url(../images/options/apartments/5.png);
+        width: 40px;
+        height: 41px;
+      }
+    }
+
+    &--door {
+      &::before {
+        background-image: url(../images/options/apartments/6.png);
+        width: 38px;
+        height: 40px;
+      }
+    }
+
+    &--thermal {
+      &::before {
+        background-image: url(../images/options/apartments/7.png);
+        width: 41px;
+        height: 40px;
+      }
+    }
+
+    &--wifi {
+      &::before {
+        background-image: url(../images/options/apartments/8.png);
+        width: 45px;
+        height: 33px;
+      }
+    }
+
+    // todo complex
+    
+    &--territory {
+      &::before {
+        background-image: url(../images/options/complex/1.png);
+        width: 44px;
+        height: 40px;
+      }
+    }
+    
+    &--parking {
+      &::before {
+        background-image: url(../images/options/complex/2.png);
+        width: 50px;
+        height: 31px;
+      }
+    }
+    
+    &--guest {
+      &::before {
+        background-image: url(../images/options/complex/3.png);
+        width: 45px;
+        height: 40px;
+      }
+    }
+    
+    &--playground {
+      &::before {
+        background-image: url(../images/options/complex/4.png);
+        width: 43px;
+        height: 40px;
+      }
+    }
+    
+    &--bikelane {
+      &::before {
+        background-image: url(../images/options/complex/5.png);
+        width: 56px;
+        height: 35px;
+      }
+    }
+    
+    &--rest {
+      &::before {
+        background-image: url(../images/options/complex/6.png);
+        width: 38px;
+        height: 40px;
+      }
+    }
+    
+    &--security {
+      &::before {
+        background-image: url(../images/options/complex/7.png);
+        width: 23px;
+        height: 40px;
+      }
+    }
+    
+    &--seismic {
+      &::before {
+        background-image: url(../images/options/complex/8.png);
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  &__name {
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      background-color: $accent;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  &__text {
+    font-weight: 300;
+    line-height: 1.3;
+  }
+}

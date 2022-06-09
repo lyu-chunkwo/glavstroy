@@ -1,0 +1,237 @@
+.breadcrumbs-contacts {
+  margin-bottom: 85px;
+
+  @media (max-width: 940px) {
+    margin-bottom: 40px;
+  }
+}
+
+.header-page {
+  &__title {
+    @media (max-width: 500px) {
+      font-size: 48px;
+    }
+
+    @media (max-width: 396px) {
+      padding-left: 20px;
+      font-size: 44px;
+    }
+  }
+}
+
+.contacts {
+  padding-bottom: 135px;
+
+  @media (max-width: 500px) {
+    padding-bottom: 40px;
+  }
+
+  &__wide {
+    background-image: url(../images/benefits/decor.png);
+    background-repeat: no-repeat;
+    background-position: top 10px right 165px;
+
+    @media (max-width: 940px) {
+      background-position: top right;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 940px) {
+      display: block;
+    }
+  }
+
+  &__list {
+    max-width: 390px;
+
+    @media (max-width: 940px) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__item {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $border-light;
+    margin-bottom: 30px;
+    padding-left: 50px;
+    position: relative;
+
+    @media (max-width: 426px) {
+      font-size: 18px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &--address {
+      &::before {
+        background-image: url(../images/contacts/1.png);
+        width: 23px;
+        height: 32px;
+      }
+    }
+
+    &--phones {
+      &::before {
+        background-image: url(../images/contacts/2.png);
+        width: 30px;
+        height: 32px;
+      }
+    }
+
+    &--routine {
+      &::before {
+        background-image: url(../images/contacts/3.png);
+        width: 31px;
+        height: 30px;
+      }
+    }
+
+    &:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+  }
+
+  &__address {
+    margin-bottom: 10px;
+  }
+
+  &__phone {
+    display: block;
+    margin-bottom: 15px;
+    color: #000;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__routine {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 426px) {
+      justify-content: flex-start;
+    }
+
+    span {
+      display: inline-block;
+      margin-bottom: 12px;
+      display: block;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__holder {
+    max-width: 470px;
+    padding: 120px 60px 70px;
+    border: 10px solid $border-light;
+    position: relative;
+    background-color: #fff;
+    z-index: 0;
+
+    @media (max-width: 940px) {
+      max-width: 100%;
+    }
+
+    @media (max-width: 500px) {
+      padding: 50px 15px 40px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 305px;
+      height: 3px;
+      background-color: #000;
+      top: 85px;
+      left: 45px;
+
+      @media (max-width: 500px) {
+        display: none;
+      }
+    }
+  }
+
+  &__days {
+    margin-right: 25px;
+  }
+
+  &__holder-title {
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 45px;
+
+    @media (max-width: 426px) {
+      font-size: 24px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__holder-subtitle {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+
+  &__holder-inputs {
+    margin-bottom: 25px;
+  }
+
+  &__holder-input {
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: #f2f2f2;
+    border: none;
+    height: 46px;
+    padding: 0 15px 0 45px;
+    font-size: 18px;
+    color: $input;
+
+    &--user {
+      background-image: url(../images/contacts/user.png);
+      background-repeat: no-repeat;
+      background-position: top 13px left 13px;
+    }
+
+    &--phone {
+      background-image: url(../images/contacts/phone.png);
+      background-repeat: no-repeat;
+      background-position: top 13px left 13px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__holder-btn {
+    width: 100%;
+    height: 46px;
+    border: none;
+    background-color: $accent;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+  }
+}

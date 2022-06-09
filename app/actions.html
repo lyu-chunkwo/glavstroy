@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" href="favicon.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ГлавСтрой</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body class="menu-scroll">
+  <div class="menu-top">
+    <div class="menu-top__inner">
+      <div class="logo-box">
+        <a href="index.html">
+          <img class="logo" src="images/header/logo.png" alt="логотип">
+        </a>
+        <a href="index.html">
+          <img class="logo-scroll" src="images/header/scroll-logo.png" alt="логотип">
+        </a>
+      </div>
+      <nav class="menu-top__nav" id="nopopup">
+        <button class="menu-top__btn" type="button">
+          <span></span>
+        </button>
+        <ul class="menu-top__list">
+          <li class="menu-top__item">
+            <a class="menu-top__link" href="objects.html">Объекты</a>
+          </li>
+          <li class="menu-top__item">
+            <a class="menu-top__link" href="installment.html">Рассрочка</a>
+          </li>
+          <li class="menu-top__item menu-top__item--action">
+            <a class="menu-top__link" href="actions.html">акции</a>
+            <span>3</span>
+          </li>
+          <li class="menu-top__item">
+            <a class="menu-top__link" href="about.html">О компании</a>
+          </li>
+          <li class="menu-top__item">
+            <a class="menu-top__link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu-top__callback">
+        <button class="menu-top__phone" type="button">
+          <span>+996 559 00-00-00</span>
+          заказать обратный звонок
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="wide-container">
+    <header class="header-page header-page--actions">
+      <div class="container">
+        <div class="header-page__title-box">
+          <h2 class="header-page__title">акции</h2>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <div class="breadcrumbs breadcrumbs-actions">
+    <div class="container">
+      <div class="breadcrumbs__content">
+        <div class="breadcrumbs__inner">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link breadcrumbs__link--active">акции</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="main">
+    <section class="actions-page">
+      <div class="container">
+        <div class="actions-page__items">
+          <div class="actions-page__item">
+            <div class="actions-page__img-box">
+              <img class="actions-page__img" src="images/actions/1.jpg" alt="">
+            </div>
+
+            <div class="actions-page__text-box">
+              <div class="actions-page__text actions-page__text--one">
+                <p>
+                  Оформи долевое участие и получи дизайн интерьера в подарок
+                </p>
+                <a class="actions-page__link actions-page__link--one" href="#popup">подробнее</a>
+              </div>
+
+              <div class="actions-page__modal" id="popup">
+                <a class="actions-page__close" href="#">
+                  <img src="images/ico/cross.svg" alt="close">
+                </a>
+                <div class="actions-page__modal-text">
+                  <h3 class="actions-page__modal-title">
+                    Оформи долевое участие и получи дизайн интерьера в подарок
+                  </h3>
+                  <p>
+                    Magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea
+                    commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est
+                    laborum.
+                  </p>
+                  <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                    totam rem aperiam,
+                    eaque
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="actions-page__item">
+            <div class="actions-page__img-box">
+              <img class="actions-page__img" src="images/actions/2.jpg" alt="">
+            </div>
+
+            <div class="actions-page__text-box">
+              <div class="actions-page__text actions-page__text--two">
+                <p>
+                  Теплый пол в подарок за 30% первоначального взноса за оплату жилья
+                </p>
+                <a class="actions-page__link actions-page__link--two" href=" #popuptwo">подробнее</a>
+              </div>
+
+              <div class="actions-page__modal" id="popuptwo">
+                <a class="actions-page__close" href="#nopopup">
+                  <img src="images/ico/cross.svg" alt="close">
+                </a>
+                <div class="actions-page__modal-text">
+                  <p>
+                    Magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea
+                    commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est
+                    laborum.
+                  </p>
+                  <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                    totam rem aperiam,
+                    eaque
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="actions-page__item">
+            <div class="actions-page__img-box">
+              <img class="actions-page__img" src="images/actions/3.jpg" alt="">
+            </div>
+
+            <div class="actions-page__text-box">
+              <div class="actions-page__text actions-page__text--three">
+                <p>
+                  Забронируй квартиру до 31 сентября и получи пластиковые окна
+                </p>
+                <a class="actions-page__link actions-page__link--three" href="#popupthree">подробнее</a>
+              </div>
+
+              <div class="actions-page__modal" id="popupthree">
+                <a class="actions-page__close" href="#nopopup">
+                  <img src="images/ico/cross.svg" alt="close">
+                </a>
+                <div class="actions-page__modal-text">
+                  <p>
+                    Magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea
+                    commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est
+                    laborum.
+                  </p>
+                  <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                    totam rem aperiam,
+                    eaque
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <div class="action-page__pagination">
+      <div class="container">
+        <div class="pagination">
+          <a class="pagination__arrow pagination__arrow--prev" href="#">
+            <img class="pagination__img-prev" src="images/ico/left-gray.svg" alt="Предыдущая страница">
+          </a>
+          <ul class="pagination__list">
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">1</a>
+            </li>
+            <li class="pagination__item pagination__item--active">
+              <a class="pagination__link" href="#">2</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">3</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">4</a>
+            </li>
+          </ul>
+          <a class="pagination__arrow pagination__arrow--next" href="#">
+            <img class="pagination__img-next" src="images/ico/right-gray.svg" alt="Следующая страница">
+          </a>
+        </div>
+      </div>
+    </div> -->
+  </main>
+
+  <footer class="footer">
+    <div class="wide-container">
+      <div class="footer-page">
+        <div class="footer-page-inner">
+          <div class="footer-page__titles">
+            <h3 class="footer-page__title">остались вопросы?</h3>
+            <h4 class="footer-page__subtitle">
+              Заполните форму и наш специалист ответит на все ваши вопросы
+            </h4>
+          </div>
+          <div class="footer-page__box">
+            <form action="#" class="footer-page__form">
+              <input class="footer-page__input footer-page__input--user" type="text" placeholder="Ваше имя">
+              <input class="footer-page__input footer-page__input--phone" type="text" placeholder="Номер телефона">
+              <button class="footer-page__input footer-page__input--btn" type="button">отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer__bottom">
+          <div class="footer__developers">
+            <div class="footer__developer">Дизайн проекта: Александр Богачёв</div>
+            <div class="footer__developer">Разработка проекта: Webex</div>
+          </div>
+          <div class="footer__copy-box">
+            <div class="footer__copy">© 2022 Строительная компания "ГлавCтрой".</div>
+            <div class="footer__copy">Все права защищены.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </div>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+.header-page {
+  &--objects {
+    background-image: url(../images/objects-page/obj-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  }
+}
+
+.objects-page {
+  padding-top: 0;
+  padding-bottom: 30px;
+
+  .objects-list__item {
+    margin-bottom: 85px;
+
+    @media (max-width: 376px) {
+      margin-bottom: 45px;
+    }
+  }
+
+  @media (max-width: 716px) {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}

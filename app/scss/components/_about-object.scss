@@ -1,0 +1,61 @@
+.single-about {
+  padding-top: 45px;
+  background-image: url(../images/object-single/line.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  margin-bottom: 35px;
+
+  @media (max-width: 1024px) {
+   padding-top: 0;
+  }
+
+  &__inner {
+    @include line;
+  }
+
+  &__title {
+    text-align: right;
+    padding-right: 30px;
+    margin-bottom: 90px;
+
+    @media (max-width: 1024px) {
+     margin-bottom: 25px;
+    }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text {
+    max-width: 540px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #000;
+    padding-top: 45px;
+    margin-right: 20px;
+
+    @media (max-width: 1024px) {
+     max-width: 100%;
+     margin-bottom: 20px;
+     padding-top: 0;
+    }
+  }
+
+  &__image {
+    @media (max-width: 1024px) {
+     display: none;
+    }
+  }
+
+  &__image-bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: -80px;
+
+    @media (max-width: 1024px) {
+     margin-top: 0;
+    }
+  }
+}

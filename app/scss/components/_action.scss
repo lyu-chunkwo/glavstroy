@@ -1,0 +1,130 @@
+.action {
+  background-image: url(../images/action/action-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 65px;
+  height: 74vh;
+  background-color: #f2f2f2;
+  
+  &__inner {
+    padding-top: 35px;
+    border-top: 1px solid #5e5e5d;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 310px;
+      height: 2px;
+      background-color: $accent;
+      left: 0;top: -2px;
+
+      @media (max-width: 350px) {
+       width: 140px;
+      }
+    }
+  }
+
+  &__title {
+    color: #fff;
+    padding-left: 20px;
+    margin-bottom: 60px;
+  }
+}
+
+.action-slider {
+  &__inner {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 105px;
+      height: 17px;
+      background-color: $accent;
+      right: -3px;
+      bottom: 120px;
+    }
+  }
+  
+  &__item {
+    height: 430px;
+    position: relative;
+  }
+
+  &__box {
+    width: 285px;
+    height: 275px;
+    padding: 95px 28px 40px;
+    background-color: rgba(22,170,226, 0.9);
+    position: relative;
+    z-index: 5;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 23px;
+      height: 5px;
+      background-color: #fff;
+      top: 30px;
+      left: 28px;
+    }
+
+    @media (max-width: 630px) {
+     width: 205px;
+     height: 195px;
+     padding-top: 55px;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+    line-height: 1.2;
+
+    @media (max-width: 630px) {
+     font-size: 13px;
+    }
+  }
+
+  &__link {
+    padding: 8px 13px;
+    background-color: #fff;
+    color: $accent;
+    font-size: 10px;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    bottom: 0px;
+    left: 85px;
+    width: 970px;
+    height: 382px;
+  }
+
+  &__img {
+    width: 970px;
+    height: 382px;
+    object-fit: cover;
+  }
+
+  .slick-arrow {
+    position: absolute;
+    right: 0;
+    top: -95px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+  }
+
+  .slick-prev {
+    right: 50px;
+  }
+}

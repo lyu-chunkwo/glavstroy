@@ -1,0 +1,153 @@
+.decor {
+  @media (max-width: 1880px) {
+   background-image: none;
+  }
+}
+
+.single-header {
+  background-image: url(../images/object-single/os-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 77vh;
+  margin-bottom: 30px;
+
+  &__inner {
+    height: 77vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+  }
+
+  &__text-box {
+    padding-left: 25px;
+    position: relative;
+    z-index: 5;
+    font-size: 24px;
+    margin-bottom: 25px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 290px;
+      height: 80px;
+      background-color: $accent;
+      left: 0;
+      top: -15px;
+      z-index: -1;
+
+      @media (max-width: 610px) {
+        display: none;
+      }
+    }
+
+    p {
+      margin-right: 45px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    span {
+      font-weight: 200;
+      text-transform: uppercase;
+      color: #c1c1c1;
+    }
+
+    @media (max-width: 450px) {
+      padding-left: 0;
+    }
+  }
+
+  &__text {
+    display: flex;
+    margin-bottom: 4px;
+
+    @media (max-width: 610px) {
+      display: block;
+    }
+  }
+
+  &__title {
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding-left: 45px;
+    line-height: 1;
+
+    @media (max-width: 610px) {
+      padding-left: 0;
+    }
+
+    @media (max-width: 450px) {
+      font-size: 48px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    padding-left: 67px;
+
+    p {
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 800;
+      margin: 0 15px 15px 0;
+    }
+
+    span {
+      display: block;
+      font-size: 48px;
+      font-weight: 200;
+      margin-bottom: 5px;
+
+      @media (max-width: 930px) {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+    }
+
+    @media (max-width: 610px) {
+      padding-left: 0;
+    }
+
+    @media (max-width: 930px) {
+      display: block;
+    }
+  }
+
+  &__item {
+    padding: 15px 35px 15px 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-right: 10px;
+    position: relative;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 2px;
+      background-color: $accent;
+      left: 15px;
+      bottom: 20px;
+    }
+
+    @media (max-width: 930px) {
+      margin-bottom: 15px;
+      max-width: 290px;
+      width: 100%;
+    }
+  }
+
+  &__item-inner {
+    @media (max-width: 930px) {
+      display: flex;
+      margin-right: 0;
+    }
+  }
+}

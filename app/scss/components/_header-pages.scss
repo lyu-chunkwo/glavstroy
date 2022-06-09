@@ -1,0 +1,25 @@
+// ! INSTALLMENT
+.header-page {
+  &--installment {
+    background-image: url(../images/installment/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  // ! ACTIONS
+  &--actions {
+    background-image: url(../images/actions/actions-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  // ! ABOUT
+  &--about {
+    background-image: url(../images/about/about-header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+}

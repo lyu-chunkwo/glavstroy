@@ -1,0 +1,70 @@
+.objects {
+  background-color: #f2f2f2;
+  padding-top: 65px;
+  background-image: url(../images/objects/objects-decor.png);
+  background-repeat: no-repeat;
+  background-position: top 22px right;
+  padding-bottom: 80px;
+
+  @media (max-width: 840px) {
+   padding-bottom: 40px;
+  }
+
+  @media (max-width: 390px) {
+   margin-bottom: 20px;
+  }
+
+  &__top {
+    border-top: 1px solid $border-light;
+    position: relative;
+    margin-bottom: 100px;
+    padding-top: 35px;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      width: 305px;
+      height: 2px;
+      background-color: $accent;
+      right: 0;
+      top: -2px;
+
+      @media (max-width: 390px) {
+       width: 200px;
+      }
+    }
+
+    @media (max-width: 390px) {
+     margin-bottom: 50px;
+    }
+  }
+  
+  &__top-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+  }
+
+  &__subtitle {
+    font-size: 14px;
+    color: $accent;
+    text-transform: uppercase;
+    font-weight: 800;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: $accent;
+      left: 0;
+      bottom: -5px;
+    }
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}

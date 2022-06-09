@@ -1,0 +1,94 @@
+.video {
+  margin-bottom: 110px;
+
+  @media (max-width: 1118px) {
+    margin-bottom: 40px;
+  }
+
+  &__wide {
+    background-image: url(../images/benefits/decor.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding-top: 45px;
+  }
+
+  &__title {
+    @include line;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 195px;
+    margin-bottom: 80px;
+
+    @media (max-width: 1118px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__content-box {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1118px) {
+      display: block;
+    }
+  }
+
+  &__list {
+    @media (max-width: 1118px) {
+      // display: flex;
+      // justify-content: space-between;
+    }
+  }
+
+  &__item {
+    max-width: 350px;
+    margin-bottom: 35px;
+    
+    @media (max-width: 1118px) {
+      max-width: 380px;
+      margin-bottom: 5px;
+    }
+  }
+  
+  &__link {
+    padding-bottom: 23px;
+    display: block;
+    border-bottom: 1px solid $border-light;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    line-height: 1.3;
+    
+    @media (max-width: 1118px) {
+      font-size: 14px;
+      padding-bottom: 5px;
+      
+    }
+    &:hover {
+      color: $accent;
+    }
+
+    &--active {
+      color: $accent;
+    }
+  }
+
+  &__content-item {
+    display: none;
+
+    iframe {
+      @media (max-width: 1118px) {
+        width: 100%;
+        height: 500px;
+      }
+
+      @media (max-width: 650px) {
+       height: 350px;
+      }
+    }
+
+    &--active {
+      display: block;
+    }
+  }
+}
